@@ -10,16 +10,18 @@
     <script defer src="stopwatch.js"></script>
 </head>
 <body>
-    <div class="stopwatch-container">
-        <header>
-            <h1>Stopwatch</h1>
-        </header>
-        <div data-count class="count">00:00:00</div>
-        <div class="buttons">
-            <button class="start">Start</button>
-            <button class="stop">Stop</button>
-            <button class="reset">Reset</button>
+    <header>
+        <h1>Stop Watch<h1>
+    </header>
+    <div class="container">
+        <div id= "display">
+            00:00:00
         </div>
-    </div>
+        <div id="button">
+            <button id= "startButton" onclick="startButton()">Start</button>
+            <button id= "stopButton" onclick="stopButton()">Stop</button>
+            <button id= "resetButton" onclick="resetButton()">Reset</button>
+            </div>
+        </div>
 </body>
 </html>

@@ -1,64 +1,62 @@
 *, *::before, *::after{
-    font-family: fantasy;
-    box-sizing: inherit;
+    overflow: hidden;
 }
 
 body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url("https://images.pexels.com/photos/697662/pexels-photo-697662.jpeg?cs=srgb&dl=pexels-ylanite-koppens-697662.jpg&fm=jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
+      background-image: url("https://images.pexels.com/photos/697662/pexels-photo-697662.jpeg?cs=srgb&dl=pexels-ylanite-koppens-697662.jpg&fm=jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
 
-.stopwatch-container{
-    border: 1px solid #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
-}
-
-.buttons{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.buttons > button{
-    cursor: pointer;
-    border-radius: 5px;
-    padding: 5px;
-    border: .5px solid;
-    font-weight: lighter;
-    box-shadow:5px 10px 5px;
-    outline: none;
-    transition: transform 0.9s ease-out;
-    font-size: 3em;
-    margin: 5px;
-    padding: 0 40px;
-}
-
-.buttons > button:hover{
-    background-color: transparent;
-    color: #fff;
-    transform: translateY(8px);
-    border: #fff;
-}
-
-h1{
-    font-size: 6em;
-    text-shadow: 2px 5px white;
-
-}
-
-.count{
-    font-size: 4.7em;
+    h1{
+        font-size: 6em;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: 900;
+        position: relative;
+        text-shadow: 2px 5px white;
+        
+      }
+.container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    } 
+#display{
+      font-size: 72px;
+      text-align: center;
+      margin: 0px auto;
+      font-family: sans-serif;
+      font-weight: 900;
+    } 
+#button{
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      flex-direction: row;
+    }
+    
+button{
+      border-radius: 5px;
+      padding: 10px;
+      font-size: 20px;
+      width: 100px;
+      box-shadow:5px 10px 5px;
+      outline: none;
+      text-align: center;
+      transition: transform 0.5s ease-out;
+      margin: 5px;
+      cursor: pointer;
+    }
+button:hover{
+      background-color: transparent;
+      color: white;
+      border: white;
+      transform: translateY(15px);
 }
